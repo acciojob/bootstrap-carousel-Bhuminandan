@@ -1,65 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="javascript.js" />
-    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
   </head>
+
   <body>
-    <div
-      id="carouselExampleControls"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="first-item active">
-          <img src="..." class="d-block w-100" alt="..." />
+    <!-- the entire body must be written by student -->
+    <div class="container">
+      <h2 class="py-3">Bootstrap Carousel</h2>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item first-slide">
+            <img
+              src="https://images.unsplash.com/photo-1683009427479-c7e36bbb7bca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item second-slide">
+            <img
+              src="https://images.unsplash.com/photo-1682686580224-cd46ea1a6950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item active third-slide">
+            <img
+              src="https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item fourth-slide">
+            <img
+              src="https://images.unsplash.com/photo-1682685796766-0fddd3e480de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item fifth-slide">
+            <img
+              src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="second-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="third-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="fourth-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="fifth-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
+        <button
+          class="carousel-control-prev glyphicon-chevron-left"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next glyphicon-chevron-right"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="glyphicon-chevron-left"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="glyphicon-chevron-left-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="glyphicon-chevron-right"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="glyphicon-chevron-right-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+
+    <!-- Bootstrap Bundle with Popper -->
     <script
-      src="https://cdn.jsd elivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
